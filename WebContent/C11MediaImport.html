@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        @import
+        - <link> 태그를 대체할 수 있다.(link태그는 style태그 밖에 선언한다.)
+        - style태그 안에서 사용해야 하고 반드시 최상단에 선언해야한다.
+        - CSS파일에 오류가 있는 경우 다운로드 하지 않는다.
+        */
+        @import url('./style/import.css');
+        .content{
+            background-color: black; color: red;
+        }
+
+        /*
+        @media
+        - 해당 웹페이지를 디바이스의 종류에 따라 각각 다르게 
+            화면을 구성할 수 있게 해주는 기능을 가지고 있다.
+        - 스크린용과 프린트용을 구분해야 할 때 사용한다.
+        */
+        @media screen {
+            .content{  /* 모니터에서는 검은 바탕에 흰색 글씨로 출력된다. */
+                background-color: black; color: white;
+            }
+        }
+
+        @media print {
+            .content{ /* 프린트 했을때는 빨간 바탕에 노란색 글씨로 출력된다. */
+                background-color: red; color: yellow;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h2>media 속성</h2>
+    <div class="content">
+        <p>
+            <h3>문대통령-바이든, 내달 21일 백악관서 첫 정상회담(종합)</h3>
+            (워싱턴·서울=연합뉴스) 류지복 특파원·김범현 기자 = 
+            문재인 대통령과 조 바이든 미국 대통령은 오는 5월 21일 
+            백악관에서 한미 정상회담을 한다고 청와대와 백악관이 30일 동시 발표했다.
+            <br><br>
+            바이든 대통령 취임 후 121일 만에 열리는 첫 대면 회담이다.
+            <br><br>
+            바이든 대통령이 외국 정상을 미국으로 직접 초청해 대면 회담을 
+            하는 것은 지난 16일 스가 요시히데(菅義偉) 일본 총리에 이어 
+            문 대통령이 두 번째다.
+            <br><br>
+            정만호 청와대 국민소통수석은 이날 브리핑에서 "코로나19로 어려운 
+            상황에서도 대면 정상회담이 조기 개최되는 것은 한미동맹의 중요성을 
+            잘 보여주는 것"이라며 "양 정상은 한미동맹의 굳건함을 재확인하고 
+            포괄적·호혜적 협력관계를 확대 발전시켜 나갈 것"이라고 밝혔다.
+        </p>
+    </div>    
+
+
+</body>
+</html>
