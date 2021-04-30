@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <!-- 
+        초록 : #70C738
+        회색 : #7B7B7B
+        검정 : #373737
+        주황 : #FA960A
+        바탕색 : #DDDDDD
+     -->
+     <style>
+       
+        table{
+            background-color: #DDDDDD;
+            color: white;
+            width: 390px; height: 370px;
+            margin: 20px;
+            border-radius: 10px; /* table의 모서리를 둥글게 */
+            font-size: 19px;
+        }
+        th{
+            border-radius: 10px; /* th태그의 모서리를 둥글게 */
+        }      
+        tr:nth-child(3){   /* tr태그중 3번째 */
+            font-size: 20px;
+            width: 10px;            
+        }      
+        input{
+            border: none;  /* 테두리를 없앰 */
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #373737;
+        }
+        tr:first-child input{  /* tr태그 중 첫번째의 input태그 */
+            background-color: #70C738;
+            text-align: end;  /* 텍스트를 오른쪽 끝으로 배치 */
+            font-size: 30px;
+            color: #373737;           
+        }       
+        tr:nth-child(3) input{ /* tr태그 중 3번째의 input태그 */
+            background-color: #7B7B7B;
+        }
+    
+     </style>
+
+</head>
+<body>
+
+    <h2 >계산기</h2>
+
+    <table cellspacing="7px" > 
+        
+        <tr  style="background-color: #70C738;"> 
+            <th colspan="4" rowspan="2" > <!-- 4개의 열을 합치고 2개의 행을 합침 -->
+                <input type="text" value="123+456"> <!-- text를 입력하는 input태그 -->
+            </th>
+            <!-- <th></th>
+            <th></th>
+            <th></th> -->
+        </tr>
+        <tr style="background-color: #70C738;">
+            <!-- <th></th>
+            <th></th>
+            <th></th>
+            <th></th> -->
+        </tr>
+        
+        <tr style="background-color: #7B7B7B;">
+            <!-- type이 버튼인 input태그 -->
+            <th colspan="2"><input type="button" value="BackSpace" ></th>
+            <!-- <th></th> -->
+            <th colspan="2"> <!-- -->
+                <input type="button"  value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                
+            </th>
+                <!-- <th></th> -->
+        </tr>
+        <tr style="background-color: #373737;">
+            <th><input type="button" value="1" ></th>
+            <th><input type="button" value="2" ></th>
+            <th><input type="button" value="3" ></th>
+            <th style="background-color: #FA960A;"><input type="button" value="/" style="background-color: #FA960A;"></th>
+        </tr>
+        <tr style="background-color: #373737;">
+            <th><input type="button" value="4" ></th>
+            <th><input type="button" value="5" ></th>
+            <th><input type="button" value="6" ></th>
+            <th style="background-color: #FA960A;"><input type="button" value="x" style="background-color: #FA960A;" ></th>
+        </tr>
+        <tr style="background-color: #373737;">
+            <th><input type="button" value="7" ></th>
+            <th><input type="button" value="8" ></th>
+            <th><input type="button" value="9" ></th>
+            <th style="background-color: #FA960A;"><input type="button" value="+" style="background-color: #FA960A;"></th>
+        </tr>
+        <tr style="background-color: #373737;">
+            <th><input type="button" value="=" ></th>
+            <th><input type="button" value="0" ></th>
+            <th><input type="button" value="." ></th>
+            <th style="background-color: #FA960A;"><input type="button" value="-" style="background-color: #FA960A;"></th>
+        </tr>
+        
+    </table>
+
+</body>
+</html>
